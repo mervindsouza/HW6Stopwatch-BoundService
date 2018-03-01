@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HW6Stopwatch</string>
+    <string name="eg_services">Example of Services</string>
+    <string name="start_services_btn_text">START SERVICES</string>
+    <string name="start_btn_text">START</string>
+    <string name="stop_btn_text">STOP</string>
+    <string name="reset_btn_text">RESET</string>
+    <string name="stop_services_btn_text">STOP SERVICES</string>
 </resources>
