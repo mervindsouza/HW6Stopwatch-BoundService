@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HW6Stopwatch.iml" filepath="$PROJECT_DIR$/HW6Stopwatch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW6Stopwatch-BoundService.iml" filepath="$PROJECT_DIR$/HW6Stopwatch-BoundService.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
