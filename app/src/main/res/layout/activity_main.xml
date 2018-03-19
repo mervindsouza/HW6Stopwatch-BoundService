@@ -27,7 +27,7 @@
 
     <Button
         android:id="@+id/startServicesMA"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/start_services_btn_text"
         android:textAllCaps="true"
@@ -36,6 +36,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/exampleofservicesMA" />
 
+    <!--Start Button-->
     <Button
         android:id="@+id/startButtonMA"
         android:layout_width="wrap_content"
@@ -44,6 +45,7 @@
         android:textAllCaps="true"
         app:layout_constraintTop_toBottomOf="@id/startServicesMA" />
 
+    <!--Start Button-->
     <Button
         android:id="@+id/stopButtonMA"
         android:layout_width="wrap_content"
@@ -53,6 +55,7 @@
         app:layout_constraintStart_toEndOf="@id/startButtonMA"
         app:layout_constraintTop_toBottomOf="@id/startServicesMA" />
 
+    <!--Start Button-->
     <Button
         android:id="@+id/resetButtonMA"
         android:layout_width="wrap_content"
@@ -61,5 +64,31 @@
         android:textAllCaps="true"
         app:layout_constraintStart_toEndOf="@id/stopButtonMA"
         app:layout_constraintTop_toBottomOf="@id/startServicesMA" />
+
+    <Button
+        android:id="@+id/stopServicesMA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_services_btn_text"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resetButtonMA" />
+
+    <TextView
+        android:id="@+id/showTimerMA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/default_timer_text"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopServicesMA" />
 
 </android.support.constraint.ConstraintLayout>
