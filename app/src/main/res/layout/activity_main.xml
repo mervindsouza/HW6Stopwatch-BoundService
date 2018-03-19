@@ -42,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/start_btn_text"
+        android:enabled="false"
         android:textAllCaps="true"
         app:layout_constraintTop_toBottomOf="@id/startServicesMA" />
 
@@ -52,6 +53,7 @@
         android:layout_height="wrap_content"
         android:text="@string/stop_btn_text"
         android:textAllCaps="true"
+        android:enabled="false"
         app:layout_constraintStart_toEndOf="@id/startButtonMA"
         app:layout_constraintTop_toBottomOf="@id/startServicesMA" />
 
@@ -61,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/reset_btn_text"
+        android:enabled="false"
         android:textAllCaps="true"
         app:layout_constraintStart_toEndOf="@id/stopButtonMA"
         app:layout_constraintTop_toBottomOf="@id/startServicesMA" />
