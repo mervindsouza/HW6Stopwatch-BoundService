@@ -7,6 +7,9 @@ import android.os.IBinder;
 import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.widget.Chronometer;
+import android.widget.Toast;
+
+import java.text.MessageFormat;
 
 /**
  * Created by merv on 3/18/18.
@@ -17,15 +20,15 @@ public class StopwatchService extends Service {
     protected Chronometer stopwatchChronometer;
     protected IBinder iBinder = new StopWatchBinder();
 
-    public class StopWatchBinder extends Binder{
-        StopwatchService getServiceFromStopwatchService(){
+    public class StopWatchBinder extends Binder {
+        StopwatchService getServiceFromStopwatchService() {
             return StopwatchService.this;
         }
     }
 
     //Chronometer Methods
 
-    protected void StopChronomter(){
+    protected void StopChronomter() {
         stopwatchChronometer.stop();
     }
 
@@ -60,5 +63,19 @@ public class StopwatchService extends Service {
     public void onDestroy() {
         super.onDestroy();
         stopwatchChronometer.stop();
+    }
+
+    //Calculate Timer value
+
+    protected String CalculatedTimerValue(long defaultMilisecTime, long waitTime, long updatedTime, long initialTime) {
+
+        defaultMilisecTime = SystemClock.uptimeMillis() - initialTime;
+        updatedTime = waitTime + defaultMilisecTime;
+        int seconds = (int) (updatedTime / 1000);
+        int minutes = seconds / 60;
+        seconds = seconds % 60;
+        int milliseconds = (int) (updatedTime % 1000);
+
+        return String.format(minutes + " : " + "%02d" + " : " + "%03d", seconds, milliseconds);
     }
 }
